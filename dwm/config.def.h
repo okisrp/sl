@@ -1,9 +1,11 @@
 static const unsigned int borderpx = 2;
 static const unsigned int snap     = 32;
-static const int showbar           = 1;
-static const int topbar            = 1;
-static const char *fonts[]         = { "Iosevka Nerd Font:size=12" };
-static const char dmenufont[]      = "Iosevka Nerd Font:size=12";
+
+static const int showbar = 1;
+static const int topbar  = 1;
+
+static const char *fonts[]    = { "Iosevka Nerd Font:size=12" };
+static const char dmenufont[] = "Iosevka Nerd Font:size=12";
 
 static const char col_gray1[] = "#222222";
 static const char col_gray2[] = "#444444";
@@ -20,16 +22,15 @@ static const char *tags[] = { "idx", "web", "cli", "dev", "vbx", "rdn", "cht", "
 
 static const Rule rules[] = {};
 
-static const float mfact     = 0.6;
-static const int nmaster     = 1;
-static const int resizehints = 1;
+static const float mfact        = 0.6;
+static const int nmaster        = 1;
+static const int resizehints    = 1;
 static const int lockfullscreen = 1;
 
 static const Layout layouts[] = {
-	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+  { "[T]", tile },
+  { "[F]", NULL },
+  { "[M]", monocle },
 };
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
