@@ -20,7 +20,10 @@ static const char *colors[][3] = {
 
 static const char *tags[] = { "idx", "web", "cli", "dev", "vbx", "rdn", "cht", "vid", "otr" };
 
-static const Rule rules[] = {};
+static const Rule rules[] = {
+  { "Gimp",     NULL,       NULL,       0,            1,           -1 },
+  { "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+};
 
 static const float mfact        = 0.6;
 static const int nmaster        = 1;
