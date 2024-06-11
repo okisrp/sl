@@ -16,3 +16,8 @@ st/config.h
 st/st
 st/st.o
 st/x.o
+
+slock/config.h
+slock/explicit_bzero.o
+slock/slock
+slock/slock.o
