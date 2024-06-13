@@ -675,9 +675,7 @@ selrequest(XEvent *e)
 		fprintf(stderr, "Error sending SelectionNotify event\n");
 }
 
-void
-setsel(char *str, Time t)
-{
+void setsel(char *str, Time t) {
 	if (!str)
 		return;
 
@@ -687,6 +685,8 @@ setsel(char *str, Time t)
 	XSetSelectionOwner(xw.dpy, XA_PRIMARY, xw.win, t);
 	if (XGetSelectionOwner(xw.dpy, XA_PRIMARY) != xw.win)
 		selclear();
+
+	xclipcopy();
 }
 
 void
