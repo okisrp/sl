@@ -52,6 +52,7 @@ static const char *dmenucmd[] = {
 };
 
 static const char *termcmd[] = { "st", NULL };
+static const char *lockcmd[] = { "slock", NULL };
 
 #define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
@@ -63,6 +64,9 @@ static const char *termcmd[] = { "st", NULL };
 static const Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_u,      spawn,          {.v = termcmd } },
+	{ MODKEY|ControlMask|ShiftMask, XK_l,      spawn,          {.v = lockcmd } },
+	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ControlMask|ShiftMask, XK_q,      spawn,          SHCMD("poweroff") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ Mod1Mask,                     XK_Tab,    focusstack,     {.i = +1 } },
 	{ Mod1Mask|ShiftMask,           XK_Tab,    focusstack,     {.i = -1 } },
@@ -88,8 +92,6 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ MODKEY|ControlMask|ShiftMask, XK_q,      spawn,          SHCMD("poweroff") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
