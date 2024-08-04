@@ -1,13 +1,13 @@
 static const unsigned int borderpx = 2;
-static const unsigned int snap     = 32;
+static const unsigned int snap     = 16;
 
 static const int showbar = 1;
 static const int topbar  = 1;
 
-static const Bool viewontag = 1;
+static const int viewontag = 1;
 
-static const char *fonts[]    = { "Iosevka Nerd Font:size=12" };
-static const char dmenufont[] = "Iosevka Nerd Font:size=12";
+static const char *fonts[]    = { "IosevkaTerm Nerd Font:size=12" };
+static const char dmenufont[] = "IosevkaTerm Nerd Font:size=12";
 
 static const char col_gray1[] = "#1e1e2e";
 static const char col_gray2[] = "#313244";
@@ -23,7 +23,7 @@ static const char *colors[][3] = {
 static const char *tags[] = { "idx", "web", "cli", "rdn", "vbx", "dev", "cht", "vid", "otr" };
 
 static const Rule rules[] = {
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	{ "SOME_APP", NULL, NULL, 0, 1, -1 },
 };
 
 static const float mfact        = 0.6;

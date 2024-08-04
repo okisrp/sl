@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Terminus:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Iosevka Term:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -141,8 +141,8 @@ static unsigned int cursorshape = 2;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 120;
+static unsigned int rows = 30;
 
 /*
  * Default colour and shape of the mouse cursor
