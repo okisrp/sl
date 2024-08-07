@@ -16,8 +16,8 @@ static const char col_gray4[] = "#cdd6f4";
 static const char col_cyan[]  = "#1e66f5";
 
 static const char *colors[][3] = {
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeNorm] = { col_gray4, col_gray1, col_gray2 },
+	[SchemeSel]  = { col_gray3, col_cyan,  col_cyan  },
 };
 
 static const char *tags[] = { "idx", "web", "cli", "rdn", "vbx", "dev", "cht", "vid", "otr" };
@@ -45,9 +45,9 @@ static const char *dmenucmd[] = {
 	"-m", dmenumon,
 	"-fn", dmenufont,
 	"-nb", col_gray1,
-	"-nf", col_gray3,
+	"-nf", col_gray4,
 	"-sb", col_cyan,
-	"-sf", col_gray4,
+	"-sf", col_gray3,
 	NULL
 };
 
