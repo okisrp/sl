@@ -6,8 +6,8 @@ static const int topbar  = 1;
 
 static const int viewontag = 1;
 
-static const char *fonts[]    = { "3270 Nerd Font:size=14" };
-static const char dmenufont[] = "3270 Nerd Font:size=14";
+static const char *fonts[]    = { "IBM 3270 Condensed:size=14" };
+static const char dmenufont[] = "IBM 3270 Condensed:size=14";
 
 static const char col_gray1[] = "#1e1e2e";
 static const char col_gray2[] = "#313244";
