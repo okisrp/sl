@@ -7,7 +7,6 @@ static const int topbar  = 1;
 static const int viewontag = 1;
 
 static const char *fonts[]    = { "IBM 3270 Condensed:size=14" };
-static const char dmenuprompt[] = "Launch:";
 
 static const char col_gray1[] = "#1e1e2e";
 static const char col_gray2[] = "#313244";
@@ -39,7 +38,9 @@ static const Layout layouts[] = {
 
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
-static char dmenumon[2] = "0";
+static const char dmenuprompt[] = "Launch:";
+static char dmenumon[2]         = "0";
+
 static const char *dmenucmd[] = {
 	"dmenu_run", "-i",
 	"-m", dmenumon,
